@@ -3,136 +3,82 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Portfolio - [Your Name]</title>
+    <title>About Me - Hanqi Zou</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Ensure the footer sticks to the bottom */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+
+        /* Adjust the height of the sections */
+        .masthead {
+            height: 100vh; /* Full height to ensure it fills the page */
+            min-height: 500px;
+            background-color: #333; /* Adjust the background color if needed */
+            color: white; /* Ensure the text is readable */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Footer should stay at the bottom */
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            width: 100%;
+        }
+        
+        h2 {
+            color: white; /* Text color */
+        }
+
+        p {
+            color: #f1f1f1; /* Slightly lighter for readability */
+        }
+    </style>
 </head>
 <body id="page-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#about">About Me</a>
+            <a class="navbar-brand" href="index.html">About Me</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="work-experience.html">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- About Me Section -->
-    <section class="about-section text-center" id="about" style="color: white;">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="mb-4">About Me</h2>
-                    <p>
-                        Hello! My name is Hanqi Zou, and I am a senior major in Economics & CS. Welcome to my personal portfolio website! 
-                        Here you can find information about my work experience, projects, and ways to contact me.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-    <!-- Work Experience Section -->
-    <section class="text-center" id="work-experience">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-black mb-4">Work Experience</h2>
-            <!-- Job 1 -->
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h4 class="text-black">Job Title 1: Quantitative Trading Intern</h4>
-                    <p class="text-black-50">Guosen Future Co. Ltd</p>
-                    <p class="text-black-50">Dates: Jun 2024 – Aug 2024</p>
-                    <p class="text-black-50">
-                        Description: Conceptualized and developed algorithmic trading strategies for 
-                        Chinese equity index futures using Python; analyzed large data 
-                        sets to identify trading signals and conducted back-tests to design optimal trading strategies
-                    </p>
-                </div>
+    <!-- Main Section - About Me -->
+    <main>
+        <header class="masthead">
+            <div>
+                <h2>About Me</h2>
+                <p>Hello! My name is Hanqi Zou, and I am a [your role/occupation]. Welcome to my personal portfolio website! Here you can find information about my work experience, projects, and ways to contact me.</p>
             </div>
-
-            <!-- Job 2 -->
-            <div class="row gx-4 gx-lg-5 justify-content-center mt-5">
-                <div class="col-lg-8">
-                    <h4 class="text-black">Job Title 2: Private Equity Spring Analyst</h4>
-                    <p class="text-black-50">Company: Lionchase Equity</p>
-                    <p class="text-black-50">Dates: Feb 2023 – Jul 2023</p>
-                    <p class="text-black-50">
-                        Description: Assisted in preparation of pitch materials and presentations for prospective 
-                        investors on portfolio company Healthmetryx; conducted due diligence on business model and 
-                        growth opportunities to support capital raise
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects-section bg-light" id="projects">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-black text-center mb-4">Projects</h2>
-            <!-- Project 1 -->
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h4 class="text-black">Project Title 1</h4>
-                    <p class="text-black-50">
-                        Description of your project. <a href="https://github.com/your-github-username/project-1-repo">View on GitHub</a>
-                    </p>
-                </div>
-            </div>
-            <!-- Add more projects if needed -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section bg-light" id="contact">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center text-black mb-4">Contact Me</h2>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <i class="fas fa-envelope fa-2x mb-4 text-black"></i>
-                    <p class="text-black-50">
-                        Email: <a href="mailto:zouhanq@bu.edu">zouhanq@bu.edu</a>
-                    </p>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <i class="fas fa-phone fa-2x mb-4 text-black"></i>
-                    <p class="text-black-50">
-                        Phone: +1 (812) 650-8621
-                    </p>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <i class="fab fa-linkedin fa-2x mb-4 text-black"></i>
-                    <p class="text-black-50">
-                        LinkedIn: <a href="https://www.linkedin.com/in/iu-hanqi-zou-ksb/" target="_blank">https://www.linkedin.com/in/iu-hanqi-zou-ksb/</a>
-                    </p>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <i class="fab fa-github fa-2x mb-4 text-black"></i>
-                    <p class="text-black-50">
-                        GitHub: <a href="https://github.com/zouhanq" target="_blank">https://github.com/zouhanq</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </header>
+    </main>
 
     <!-- Footer -->
     <footer class="footer bg-black small text-center text-white-50">
